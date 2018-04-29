@@ -130,9 +130,6 @@ wfLoadExtension( 'DisplayTitle' );
 $wgAllowDisplayTitle = true;
 $wgRestrictDisplayTitle = false;
 
-wfLoadExtension( 'ParserFunctions' );
-$wgPFEnableStringFunctions = true;
-
 $wgShowSQLErrors = true;
 $wgDebugDumpSql  = true;
 $wgShowDBErrorBacktrace = true;
