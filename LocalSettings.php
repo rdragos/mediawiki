@@ -136,6 +136,8 @@ wfLoadExtension( 'DisplayTitle' );
 $wgAllowDisplayTitle = true;
 $wgRestrictDisplayTitle = false;
 
+wfLoadExtension( 'RandomSelection' );
+
 $wgShowSQLErrors = true;
 $wgDebugDumpSql  = true;
 $wgShowDBErrorBacktrace = true;
