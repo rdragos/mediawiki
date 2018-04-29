@@ -131,6 +131,7 @@ $wgAllowDisplayTitle = true;
 $wgRestrictDisplayTitle = false;
 
 wfLoadExtension( 'ParserFunctions' );
+$wgPFEnableStringFunctions = true;
 
 
 # End of automatically generated settings.
