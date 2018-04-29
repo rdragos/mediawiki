@@ -133,7 +133,9 @@ $wgRestrictDisplayTitle = false;
 wfLoadExtension( 'ParserFunctions' );
 $wgPFEnableStringFunctions = true;
 
-
+$wgShowSQLErrors = true;
+$wgDebugDumpSql  = true;
+$wgShowDBErrorBacktrace = true;
 # End of automatically generated settings.
 # Add more configuration options below.
 
