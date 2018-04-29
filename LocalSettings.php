@@ -124,6 +124,7 @@ $wgCacheDirectory = "/tmp";
 ## names, ie 'vector', 'monobook':
 $wgDefaultSkin = "vector";
 wfLoadSkin( 'Vector' );
+wfLoadExtension( 'SimpleMathJax' );
 # End of automatically generated settings.
 # Add more configuration options below.
 
