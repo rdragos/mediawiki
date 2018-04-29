@@ -132,6 +132,10 @@ $wgPFEnableStringFunctions = true;
 wfLoadExtension( 'Scribunto' );
 $wgScribuntoDefaultEngine = 'luastandalone';
 
+wfLoadExtension( 'DisplayTitle' );
+$wgAllowDisplayTitle = true;
+$wgRestrictDisplayTitle = false;
+
 $wgShowSQLErrors = true;
 $wgDebugDumpSql  = true;
 $wgShowDBErrorBacktrace = true;
