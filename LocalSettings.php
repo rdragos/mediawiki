@@ -129,6 +129,8 @@ wfLoadExtension( 'SimpleMathJax' );
 wfLoadExtension( 'ParserFunctions' );
 $wgPFEnableStringFunctions = true;
 
+wfLoadExtension( 'Scribunto' );
+$wgScribuntoDefaultEngine = 'luastandalone';
 
 $wgShowSQLErrors = true;
 $wgDebugDumpSql  = true;
