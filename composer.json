@@ -47,7 +47,8 @@
 		"wikimedia/timestamp": "1.0.0",
 		"wikimedia/wait-condition-loop": "1.0.1",
 		"wikimedia/wrappedstring": "2.3.0",
-		"zordius/lightncandy": "0.23"
+		"zordius/lightncandy": "0.23",
+		"mediawiki/header-footer": "dev-master"
 	},
 	"require-dev": {
 		"composer/spdx-licenses": "1.3.0",
