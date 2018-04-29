@@ -1,0 +1,31 @@
+{
+	"name": "SimpleMathJax",
+	"version": "0.7.3",
+	"author": [
+		"jmnote", "vedmaka", "jamesmontalvo3", "badshah400"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:SimpleMathJax",
+	"description": "render TeX between <code><nowiki><math></nowiki></code> and <code><nowiki></math></nowiki></code>",
+	"license-name": "GPL-2.0+",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"SimpleMathJax": "SimpleMathJax_body.php"
+	},
+	"callback": "SimpleMathJax::onRegistration",
+	"config": {
+		"SmjSize": 110,
+		"SmjUseCDN": true,
+		"SmjUseChem": true,
+		"SmjInlineMath": []
+	},
+	"ResourceModules": {
+		"ext.SmjCDN": { "scripts": "ext.SmjCDN.js" },
+		"ext.SmjLocal": { "scripts": "ext.SmjLocal.js" }
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "SimpleMathJax/modules"
+	},
+	"manifest_version": 1
+}
+
