@@ -126,6 +126,10 @@ $wgDefaultSkin = "vector";
 wfLoadSkin( 'Vector' );
 wfLoadExtension( 'SimpleMathJax' );
 
+wfLoadExtension( 'ParserFunctions' );
+$wgPFEnableStringFunctions = true;
+
+
 $wgShowSQLErrors = true;
 $wgDebugDumpSql  = true;
 $wgShowDBErrorBacktrace = true;
