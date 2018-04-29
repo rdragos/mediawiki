@@ -48,7 +48,8 @@
 		"wikimedia/wait-condition-loop": "1.0.1",
 		"wikimedia/wrappedstring": "2.3.0",
 		"zordius/lightncandy": "0.23",
-		"mediawiki/header-footer": "dev-master"
+		"mediawiki/header-footer": "dev-master",
+		"mediawiki/semantic-scribunto": "^1.1"
 	},
 	"require-dev": {
 		"composer/spdx-licenses": "1.3.0",
