@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата",
+			"Base",
+			"Dars",
+			"Piramidion"
+		]
+	},
+	"urlshortener": "Скорочувач URL-адрес",
+	"urlshortener-desc": "Скорочувач довільних URL-адрес",
+	"urlshortener-url-input-label": "URL-адреса",
+	"urlshortener-url-input-submit": "Скоротити",
+	"urlshortener-url-input-submitting": "Скорочення…",
+	"urlshortener-not-found-title": "Коротку URL-адресу не знайдено",
+	"urlshortener-not-found-message": "Вибачте, URL-адресу, яку ви шукаєте, не знайдено.",
+	"urlshortener-form-header": "Вставте вашу довгу URL-адресу тут",
+	"urlshortener-error-malformed-url": "Неприпустимий URL",
+	"urlshortener-shortened-url-label": "Скорочений URL",
+	"urlshortener-error-disallowed-url": "URL-адреси у домені $1 не можуть бути скорочені",
+	"urlshortener-approved-domains": "Посилання на {{PLURAL:$1|наступні домени|наступний домен}} можуть бути скорочено: $2.",
+	"urlshortener-ratelimit": "Будь ласка, зачекайте деякий час перш ніж скорочувати більше URLів.",
+	"urlshortener-toolbox": "Отримати вкорочену URL-адресу",
+	"urlshortener-error-badports": "URL-адреси, які містять порти, не можуть бути вкорочені",
+	"urlshortener-error-nouserpass": "Веб-адреси, які містять ім'я користувача або пароль, не можуть бути вкорочені",
+	"urlshortener-failed-try-again": "Не вдалося. Спробувати ще раз?",
+	"urlshortener-disabled": "Створення нових коротких URL-адрес тимчасово вимкнене.",
+	"apihelp-shortenurl-description": "Скоротити довгу URL-адресу, створивши коротку.",
+	"apihelp-shortenurl-summary": "Перетворити довгу URL-адресу в коротку",
+	"apihelp-shortenurl-param-url": "URL-адреса, яку треба скоротити.",
+	"apihelp-shortenurl-example-1": "Отримати коротку URL-адресу для <kbd><nowiki>https://en.wikipedia.org/wiki/Arctica</nowiki></kbd>.",
+	"apierror-urlshortener-disabled": "Не можна створювати нових коротких URL-адрес"
+}

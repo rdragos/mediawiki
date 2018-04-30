@@ -1,0 +1,115 @@
+{
+	"name": "UrlShortener",
+	"version": "1.0.1",
+	"author": [
+		"Yuvi Panda",
+		"Prateek Saxena",
+		"Tim Starling",
+		"Kunal Mehta"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:UrlShortener",
+	"descriptionmsg": "urlshortener-desc",
+	"license-name": "Apache-2.0",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.27.0"
+	},
+	"APIModules": {
+		"shortenurl": "ApiShortenUrl"
+	},
+	"AutoloadClasses": {
+		"UrlShortenerUtils": "UrlShortener.utils.php",
+		"UrlShortenerHooks": "UrlShortener.hooks.php",
+		"SpecialUrlShortener": "SpecialUrlShortener.php",
+		"SpecialUrlRedirector": "SpecialUrlRedirector.php",
+		"ApiShortenUrl": "ApiShortenUrl.php"
+	},
+	"ExtensionMessagesFiles": {
+		"UrlShortenerAlias": "UrlShortener.alias.php",
+		"UrlShortenerNoTranslateAlias": "UrlShortener.notranslate-alias.php"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": [
+			"UrlShortenerHooks::onLoadExtensionSchemaUpdates"
+		],
+		"WebRequestPathInfoRouter": [
+			"UrlShortenerHooks::onWebRequestPathInfoRouter"
+		],
+		"BeforePageDisplay": [
+			"UrlShortenerHooks::onBeforePageDisplay"
+		],
+		"BaseTemplateToolbox": [
+			"UrlShortenerHooks::onBaseTemplateToolbox"
+		]
+	},
+	"MessagesDirs": {
+		"UrlShortener": [
+			"i18n"
+		]
+	},
+	"RateLimits": {
+		"urlshortcode": {
+			"ip": [ 10, 120 ],
+			"newbie": [ 10, 120 ],
+			"user": [ 50, 120 ]
+		}
+	},
+	"ResourceModules": {
+		"ext.urlShortener.special": {
+			"scripts": [
+				"modules/ext.urlShortener.special.js"
+			],
+			"messages": [
+				"urlshortener-error-malformed-url",
+				"urlshortener-error-disallowed-url",
+				"urlshortener-error-badports",
+				"urlshortener-error-nouserpass",
+				"urlshortener-url-input-submit",
+				"urlshortener-url-input-submitting",
+				"urlshortener-shortened-url-label"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"mediawiki.api",
+				"mediawiki.Uri"
+			]
+		},
+		"ext.urlShortener.toolbar": {
+			"scripts": [
+				"modules/ext.urlShortener.toolbar.js"
+			],
+			"styles": [
+				"modules/ext.urlShortener.toolbar.less"
+			],
+			"messages": [
+				"urlshortener-url-input-submitting",
+				"urlshortener-failed-try-again",
+				"urlshortener-shortened-url-label",
+				"urlshortener-ratelimit"
+			],
+			"dependencies": [
+				"mediawiki.api"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "UrlShortener"
+	},
+	"SpecialPages": {
+		"UrlShortener": "SpecialUrlShortener",
+		"UrlRedirector": "SpecialUrlRedirector"
+	},
+	"config": {
+		"UrlShortenerApprovedDomains": false,
+		"UrlShortenerDBCluster": false,
+		"UrlShortenerDBName": false,
+		"UrlShortenerDomainsWhitelist": false,
+		"UrlShortenerIdSet": "23456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz$_",
+		"UrlShortenerServer": false,
+		"UrlShortenerTemplate": false,
+		"UrlShortenerAllowArbitraryPorts": false,
+		"UrlShortenerReadOnly": false
+	},
+	"manifest_version": 1
+}
