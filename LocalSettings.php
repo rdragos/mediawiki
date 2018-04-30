@@ -139,6 +139,7 @@ $wgRestrictDisplayTitle = false;
 wfLoadExtension( 'RandomSelection' );
 
 wfLoadExtension( 'UrlShortener' );
+$wgUrlShortenerTemplate = '/r/$1';
 
 #$wgShowSQLErrors = true;
 #$wgDebugDumpSql  = true;
