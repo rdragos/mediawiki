@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^/r/(.*)$ https://opencryptography.herokuapp.com/index.php?title=Open_Problems:$1 [PT]
+RewriteRule ^/r/(.*)$ /app/index.php?title=Open_Problems:$1 [PT]
